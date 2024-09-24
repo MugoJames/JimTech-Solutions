@@ -6,7 +6,7 @@ import De from "../assets/De.jpeg";
 
 function About() {
   return (
-    <div id='about' className='p-8 relative'>
+    <div id='about' className='p-8 pt-52 relative'>
       <div className='lg:flex lg:justify-between lg:items-center'>
 
         {/* Left Content Section */}
@@ -42,7 +42,7 @@ function About() {
       {/* Our Commitment Section */}
       <div className='mt-16'>
         <div className='p-8'>
-          <h1 className='text-4xl font-serif'>Our Commitment to You!</h1>
+          <h1 className='text-4xl font-serif'>Why Choose Us?</h1>
           <div className='bg-orange-500 w-[100px] mt-2 h-[5px] rounded-full'></div>
           <p className='mt-4 text-gray-600 lg:mr-40'>
             We believe in building lasting relationships with our clients by delivering personalized solutions. Our passion for innovation, combined with a deep understanding of your needs, sets us apart in helping you achieve your business goals.
@@ -93,6 +93,12 @@ function About() {
           </div>
         </div>
       </div>
+
+      {/* Marquee Effect 
+      <div className='marquee rounded-xl bg-orange-500 text-xl font-serif '>
+        <span>Check out our Services! We offer a wide range of web development and design solutions to meet your needs. Don't miss out!</span>
+      </div>
+      */}
     </div>
   );
 }
