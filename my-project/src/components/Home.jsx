@@ -33,7 +33,7 @@ function Home() {
         </p>
         <FaCircleArrowDown 
           onClick={handlescroll}
-          className=' w-12 h-12 text-orange-500 animate-bounce mt-20 cursor-pointer '
+          className=' w-12 h-12 text-white animate-bounce mt-20 cursor-pointer '
         /> 
 
     </div>

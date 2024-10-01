@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './components/Home';
 import Navigation from './components/Navigation';
 import About from './components/About-us';
@@ -7,11 +8,13 @@ import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Contacts from './components/ContactUs';
 import SmallServices from './components/Smallservices';
+import Footer from './components/Footer';
 import { FaWhatsapp} from 'react-icons/fa';
 import { SiImessage } from "react-icons/si";
 
 function App() {
   return (
+    <Router>
     <div>
       {/* Navigation */}
       <nav>
@@ -23,9 +26,10 @@ function App() {
           <li><Link to="portfolio" smooth={true} duration={500}></Link></li>
           <li><Link to="contact" smooth={true} duration={500}></Link></li>
           <li><Link to="small-services" smooth={true} duration={500}></Link></li>
+          <li><Link to="Footer" smooth={true} duration={500}></Link></li>
         </ul>
       </nav>
-
+      
       {/* Sections */}
       <Navigation />
       <Home />
@@ -34,6 +38,12 @@ function App() {
       <Services />
       <Portfolio />
       <Contacts />
+      <Footer />
+
+      {/* Routing for Contact Page */}
+      <Routes>
+        <Route path="/contact" element={<Contacts />} />
+      </Routes>
 
       {/* Sticky Buttons */}
       <a href="https://wa.me/254114049760" target="_blank" rel="noopener noreferrer">
@@ -48,6 +58,7 @@ function App() {
         </button>
       </a>
     </div>
+  </Router>
   );
 }
 

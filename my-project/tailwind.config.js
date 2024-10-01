@@ -10,6 +10,9 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         averia: ["Averia Serif Libre", "serif"],
       },
+      colors: {
+        primary: "#342628",
+      }
     },
   },
   plugins: [],

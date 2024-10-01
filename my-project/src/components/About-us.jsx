@@ -7,10 +7,10 @@ import De from "../assets/De.jpeg";
 function About() {
   return (
     <div id='about' className='p-8 pt-52 relative'>
-      <div className='lg:flex lg:justify-between lg:items-center'>
+      <div className='lg:flex lg:justify-between lg:items-center gap-2'>
 
         {/* Left Content Section */}
-        <div className='lg:w-1/2 bg-white shadow-xl p-12 relative z-10'>
+        <div className='lg:w-1/2 bg-white shadow-xl p-12  z-10'>
           <div className='mb-4'>
             <h1 className='text-4xl font-serif'>About Us</h1>
             <div className='bg-orange-500 w-12 mt-2 h-[5px] rounded-full'></div>
@@ -30,7 +30,7 @@ function About() {
         </div>
 
         {/* Right Image Section */}
-        <div className='lg:w-1/2 h-[400px] relative lg:-ml-16 lg:-mt-8 overflow-hidden'>
+        <div className='lg:w-1/2 lg:h-[400px]  lg:-ml-16 lg:-mt-8 overflow-hidden'>
           <img
             src={about}
             alt='About Us team'

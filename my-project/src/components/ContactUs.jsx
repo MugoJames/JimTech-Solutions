@@ -131,11 +131,12 @@ function Contacts() {
         </div>
         <div 
           className=' z-10 relative shadow-2xl rounded-[20px] border-jet p-10 m-10'
-          style={{ 
-            backgroundImage: `url(${send})` ,
-            backgroundSize: 'cover', 
-            backgroundPosition: 'center'
-          }}
+          
+         // style={{ 
+          //  backgroundImage: `url(${send})` ,
+          //  backgroundSize: 'cover', 
+          //  backgroundPosition: 'center'
+         // }}
         >
 
            {/* Overlay */}
