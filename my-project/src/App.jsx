@@ -39,11 +39,18 @@ function App() {
       <Portfolio />
       <Contacts />
       <Footer />
-
-      {/* Routing for Contact Page */}
       <Routes>
-        <Route path="/contact" element={<Contacts />} />
+        <Route path="/" element={<Navigation />} >
+            <Route path='home' element={<Home />} />
+            <Route path='small-services' element={<SmallServices />} />
+            <Route path='about' element={<About />} />
+            <Route path='services' element={<Services />} />
+            <Route path='portfolio' element={<Portfolio />} />
+            <Route path='Footer' element={<Footer />} />
+        </Route>
+        <Route path='contact' element={<Contacts />} />
       </Routes>
+
 
       {/* Sticky Buttons */}
       <a href="https://wa.me/254114049760" target="_blank" rel="noopener noreferrer">

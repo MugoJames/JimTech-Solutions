@@ -1,9 +1,8 @@
 import React from 'react';
-import about from '../assets/about1.jpeg';
 import Inn from "../assets/Inn.jpeg";
 import Ad from "../assets/Ad.jpeg";
 import De from "../assets/De.jpeg";
-
+import Coderunner from "../components/Coderunner"
 function About() {
   return (
     <div id='about' className='p-8 pt-52 relative'>
@@ -29,13 +28,9 @@ function About() {
           </p>
         </div>
 
-        {/* Right Image Section */}
-        <div className='lg:w-1/2 lg:h-[400px]  lg:-ml-16 lg:-mt-8 overflow-hidden'>
-          <img
-            src={about}
-            alt='About Us team'
-            className='w-full h-full object-cover rounded-lg shadow-lg'
-          />
+        {/* Running code */}
+        <div className='lg:w-1/2 lg:h-[400px]  lg:-ml-0 lg:-mt-8 overflow-hidden rounded-xl'>
+            <Coderunner />
         </div>
       </div>
 

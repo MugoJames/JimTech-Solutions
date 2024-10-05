@@ -10,8 +10,17 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         averia: ["Averia Serif Libre", "serif"],
       },
+      animation: {
+        'scroll-code': 'scroll 30s linear infinite',
+      },
+      keyframes: {
+        scroll: {
+          '0%': { top: '100%' },
+          '100%': { top: '-100%' },
+        },
+      },
       colors: {
-        primary: "#342628",
+        primary: "#051650",
       }
     },
   },
