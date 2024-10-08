@@ -5,8 +5,7 @@ import { IoPhonePortraitOutline } from "react-icons/io5";
 import { SlLocationPin } from "react-icons/sl";
 import { LuCalendarClock } from "react-icons/lu";
 import { BsSendFill } from "react-icons/bs";
-import contact from "../assets/contact.jpeg"
-import send from "../assets/send.jpeg"
+import PageHeader from './PageHeader';
 function Contacts() {
   const [formValues, setFormValues] = useState({
     fullName: '',
@@ -62,27 +61,20 @@ function Contacts() {
   
 
     return (
-    <div id="contact" >
-        <div className=' p-8'>
+    <div>
+      <PageHeader title="Contact" breadcrumb="Contact" />
+      <div className=' p-8'>
             <h1 className='capitalize text-[28px]'></h1>
         <div className='bg-orange-yellow-crayola w-10 mt-2 h-[5px] rounded-full'></div>
       </div>
       <div className='lg:flex '>
         <div 
-            className=' relative shadow-2xl rounded-[20px] border-jet p-10 m-10 bg-cover ' 
-            style={{ 
-              backgroundImage: `url(${contact})` ,
-              backgroundSize: 'cover', 
-              backgroundPosition: 'center'
-            }}
-            
+            className='shadow-2xl relative  rounded-[20px] border-jet p-10 m-10 bg-cover ' 
             >
 
-          {/* Overlay */}
-          <div className='absolute inset-0 bg-black opacity-35 rounded-[20px]'></div>
 
           <div className=' relative z-10'>
-            <h2 className=' text-zinc-950 font-serif '>Contact Info</h2>
+            <h2 className=' text-zinc-950 font-serif text-3xl '>Contact Info</h2>
           </div>
             <ul className='grid grid-cols-1 gap-15px p-4'>
                 <li className='min-w-full flex items-center gap-[16px] '>
@@ -131,18 +123,11 @@ function Contacts() {
         </div>
         <div 
           className=' z-10 relative shadow-2xl rounded-[20px] border-jet p-10 m-10'
-          
-         // style={{ 
-          //  backgroundImage: `url(${send})` ,
-          //  backgroundSize: 'cover', 
-          //  backgroundPosition: 'center'
-         // }}
+        
         >
 
-           {/* Overlay */}
-           <div className='absolute inset-0 bg-black opacity-35 rounded-[20px]'></div>
             <div className='relative z-20  '>
-              <h3 className='mb-[20px] text-[20px] font-serif z-10 '>Send Us A Message</h3>
+              <h3 className='mb-[20px] text-3xl font-serif z-10 '>Send Us A Message</h3>
               <form data-form onSubmit={handleSubmit} className=' z-10 ' >
                 <div className='lg:grid lg:grid-cols-2 gap-[25px] mb-[25px]'>
                       <input 

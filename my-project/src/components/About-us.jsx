@@ -2,12 +2,14 @@ import React from 'react';
 import Inn from "../assets/Inn.jpeg";
 import Ad from "../assets/Ad.jpeg";
 import De from "../assets/De.jpeg";
-import Coderunner from "../components/Coderunner"
+import about from "../assets/about1.png"
+import PageHeader from './PageHeader';
 function About() {
   return (
-    <div id='about' className='p-8 pt-52 relative'>
+    <div>
+      <PageHeader title="About Us" breadcrumb="About Us" />
+      <div id='about' className='p-8 pt-52 relative'>
       <div className='lg:flex lg:justify-between lg:items-center gap-2'>
-
         {/* Left Content Section */}
         <div className='lg:w-1/2 bg-white shadow-xl p-12  z-10'>
           <div className='mb-4'>
@@ -30,7 +32,7 @@ function About() {
 
         {/* Running code */}
         <div className='lg:w-1/2 lg:h-[400px]  lg:-ml-0 lg:-mt-8 overflow-hidden rounded-xl'>
-            <Coderunner />
+            <img src={about} alt="" />
         </div>
       </div>
 
@@ -95,6 +97,8 @@ function About() {
       </div>
       */}
     </div>
+    </div>
+
   );
 }
 

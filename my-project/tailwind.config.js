@@ -20,7 +20,8 @@ export default {
         },
       },
       colors: {
-        primary: "#051650",
+        primary: "#001D3F",
+        review:"#C7A07A"
       }
     },
   },
